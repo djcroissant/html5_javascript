@@ -13,7 +13,6 @@ function handleButtonClick() {
     li.innerHTML = songName;
     var ul = document.getElementById("playlist");
     ul.appendChild(li);
-    save(songName);
   } else {
     alert("Please enter a song")
   }
