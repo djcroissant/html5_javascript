@@ -1,16 +1,16 @@
 window.onload = function() {
   var previewButton = document.getElementById("previewButton");
   previewButton.onclick = previewHandler;
-  makeImage();
-  var url = "http://localhost/~djCroissant/Canvas/tweets.json";
-  var request = new XMLHttpRequest();
-  request.open("GET", url);
-  request.onload = function() {
-    if (request.status == 200) {
-      updateTweets(request.responseText);
-    };
-  };
-  request.send(null)
+  // makeImage();
+  // var url = "http://localhost/~djCroissant/Canvas/tweets.json";
+  // var request = new XMLHttpRequest();
+  // request.open("GET", url);
+  // request.onload = function() {
+  //   if (request.status == 200) {
+  //     updateTweets(request.responseText);
+  //   };
+  // };
+  // request.send(null)
 };
 //****The Twitter API no long supports this code*********
 //   var url = "https://api.twitter.com/1.1/statuses/user_timeline.json" +
@@ -81,7 +81,7 @@ function drawText(context, canvas) {
 
   selectObj = document.getElementById("tweets");
   index = selectObj.selectedIndex;
-  var text = selectObj[index].value;
+  var text = selectObj[index].text;
 
   context.fillStyle = fgColor;
   context.font = "bold 1em sans-serif";
