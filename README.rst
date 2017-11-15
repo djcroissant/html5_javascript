@@ -59,3 +59,9 @@ travel_agent
 This was a side-project to incorporate a Google Maps API and some of the
 JavaScript basics thus far. If you're up for an adventure, let
 it pick the location for your next vacation get-away.
+
+Note: YMMV. The Google Maps API requires domains to be specified in the
+Google account. Since this is only hosted locally, the Google map will
+probably not load on your machine. If you're really into the random travel
+idea, an API key can be acquired here:
+https://developers.google.com/maps/documentation/javascript/
