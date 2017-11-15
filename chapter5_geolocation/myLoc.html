@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>GeoLocation</title>
+
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDgZkb99jRLT8_z5keV7B24zsXssW0E2oc">
+  </script>
+
+  <script src="myLoc.js"></script>
+
+  <link rel="stylesheet" href="myLoc.css">
+
+</head>
+<body>
+  <form>
+    <input type="button" id="watch" value="Make location visible">
+    <input type="button" id="clearWatch" value="Look away!">
+  </form>
+
+  <div id="status">
+    Location tracking off.
+  </div>
+
+  <div id="location">
+    Your location will go here
+  </div>
+
+  <div id="distance">
+    Distance from HQ will go here
+  </div>
+
+  <div id = "map">
+  </div>
+  
+</body>
+</html>
