@@ -8,6 +8,7 @@ var banzaiMovie = new Movie("Bukaroo Banzai", "Cult Classic", 5,
 									["1:00pm", "5:00pm", "7:00pm", "11:00pm"]);
 alert(banzaiMovie.getNextShowing());
 
+//copied from text:
 function Movie(title, genre, rating, showtimes) {
 	this.title = title;
 	this.genre = genre;
@@ -25,6 +26,7 @@ function Movie(title, genre, rating, showtimes) {
 	};
 }
 
+// copied from text:
 function getTimeFromString(str) {
 	var theTime = new Date();
 	var time = str.match(/(\d+)(?::(\d\d))?\s*(p?)/);
