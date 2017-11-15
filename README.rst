@@ -22,6 +22,13 @@ The book is broken down as follows:
 Additional Information
 ----------------------
 
+General Approach
+^^^^^^^^^^^^^^^^
+In each chapter, I read the text, and worked through the exercises. Some
+exercises required pre-fabricated code, which I imported from here:
+https://github.com/bethrobson/Head-First-HTML5
+
+
 Chapter 5 - Geolocation
 ^^^^^^^^^^^^^^^^^^^^^^^
 This chapter covers geolocation. Based on the info in the book, I made a
@@ -45,3 +52,10 @@ and a "tweet". The user's selections are drawn on a canvas, which is then
 printed on a t-shirt and shipped to the user. Next
 steps would be to implement a business strategy, supply pipeline,
 manufacturing facility, and a small HR department. Then should be good to go.
+
+
+travel_agent
+^^^^^^^^^^^^
+This was a side-project to incorporate a Google Maps API and some of the
+JavaScript basics thus far. If you're up for an adventure, let
+it pick the location for your next vacation get-away.
