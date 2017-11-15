@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>To Do List</title>
+  <meta charset="utf-8">
+  <script>
+    //This is one syntax
+    if (window["localStorage"]) {
+      localStorage.setItem("sticky_0", "Send reading list to Dave");
+      localStorage.setItem("sticky_1", "Prep for convo w/ Miguel @ Velocity");
+      localStorage.setItem("sticky_2", "Unpack from climbing");
+      localStorage.setItem("price", 5.99);
+      localStorage.setItem("numitems", 5);
+      var sticky = localStorage.getItem("sticky_0");
+      var price = parseFloat(localStorage.getItem("price"));
+      var numItems = parseInt(localStorage.getItem("numitems"));
+    } else {
+      alert("update yr gaddam browser!");
+    }
+
+    //This syntax uses associative arrays
+    localStorage["sticky_3"] = "Make a sewing kit";
+    sticky = localStorage["sticky_3"];
+
+    //This syntax iterates over all keys
+    //note: sequence is not defined
+    for (var i = 0; i < localStorage.length; i++) {
+      var key = localStorage.key(i)
+      var value = localStorage[key];
+      alert(value);
+    }
+
+  </script>
+</head>
+<body>
+  <h1>What are we going to do Today?</h1>
+</body>
+</html>

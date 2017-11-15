@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Vidayo</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="webvilletv.css">
+  <script src="video.js"></script>
+</head>
+<body>
+  <h1>Welcome to Vidayo!</h1>
+  <div id="tv">
+    <div id="tvConsole">
+      <div id="highlight">
+        <img src="images/highlight.png" alt="highlight for tv">
+      </div>
+      <div id="videoDiv">
+        <!-- <video controls width="480"
+               height="360" poster="images/prerollposter.jpg" id="video">
+               <source id="source1" src="video/preroll.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+               <source id="source2" src="video/preroll.webm" type='video/webm; codecs="vp8, vorbis"'>
+               <source id="source3" src="video/preroll.ogv" type='video/ogg; codecs="theora, vorbis"'>
+               <p>Update yr gaddam browser!!</p>
+        </video> -->
+        <video controls width="480" height="360"
+              poster="images/prerollposter.jpg" id="video">
+        </video>
+      </div>
+    </div>
+    <img id="playButton" src="images/playpressed.png" alt="play button"
+        height="100" width="100" onclick="playHandler()">
+  </div>
+
+</body>
+</html>

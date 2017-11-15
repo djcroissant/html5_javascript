@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Canvas!!</title>
+  <style>
+    canvas {
+      border: 1px solid black;
+    }
+  </style>
+  <!-- <script src="https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=croissantdj&callback=updateTweets"></script> -->
+  <!-- <script src="https://api.twitter.com/1/statuses/user_timeline/croissantdj.json?callback=updateTweets&count=1"></script> -->
+  <script src="canvas.js"></script>
+</head>
+<body>
+  <h1>Design your shirt!</h1>
+  <canvas id="tshirtCanvas" width="600" height="200"><p>upgrade yr gadam browser!</p></canvas>
+  <form>
+    <p>
+      <label for="backgroundColor">Select background color:</label>
+      <select id="backgroundColor">
+        <option value="white" selected="selected">White</option>
+        <option value="black">Black</option>
+        <option value="blue">Blue</option>
+      </select>
+    </p>
+    <p>
+      <label for="shape">Select a shape:</label>
+      <select id="shape">
+        <option value="squares" selected="selected">Squares</option>
+        <option value="circles">Circles</option>
+        <option value="triangles">Triangles</option>
+      </select>
+    </p>
+    <p>
+      <label for="foregroundColor">Select text color:</label>
+      <select id="foregroundColor">
+        <option value="white">White</option>
+        <option value="black" selected="selected">Black</option>
+        <option value="blue">Blue</option>
+      </select>
+    </p>
+    <p>
+      <label for="tweet">Pick a tweet:</label>
+      <select id="tweets">
+        <!-- <option value="tweet0" selected="selected">This tweet isn't worth shirt</option>
+        <option value="tweet1">Don't mistake a tweet for a shirt</option>
+        <option value="tweet2">Shirt yeah, Tweet on!</option> -->
+      </select>
+    </p>
+    <p>
+      <input type="button" id="previewButton" value="Preview">
+    </p>
+  </form>
+</body>
+</html>
